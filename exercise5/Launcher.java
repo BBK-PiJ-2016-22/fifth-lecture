@@ -7,45 +7,80 @@ public class Launcher{
 		
 		MatrixChecker myMatrixChecker = new MatrixChecker();
 		
-	 	System.out.println(myMatrixChecker.isSymmetrical(myArray));
+	 	boolean symmetrical = myMatrixChecker.isSymmetrical(myArray);
+	 	
+	 	if(symmetrical == true){
+			
+			System.out.println("It is symmetrical");
+		
+		}else{
+			
+			System.out.println("Is not symmetrical");
+		
+		} 
 					
 		
 		
 		
 		Matrix myMatrix = new Matrix();
 		
-		int[][] TwoDArray = myMatrix.twoDArray;
+		//int[][] TwoDArray = myMatrix.twoDArray;
 		
 		
 		
-		
+		/* first instance made with Matrix
+	       int[][] TwoDArray = { { 1, 2, 3}, { 2, 4, 5},{ 3, 5, 6} }; */
 		
 		myMatrix.Matrix(3,3);
 		
-		//myMatrix.setRow(0, "123");
-		//myMatrix.setRow(1, "245");
-		//myMatrix.setRow(2, "356");
+		
+		myMatrix.setRow(0, "123");
+		myMatrix.setRow(1, "245");
+		myMatrix.setRow(2, "356");
 		
 		myMatrix.prettyPrint();
 		
-		Helper myHelper = new Helper();
+		boolean symmetrical2 = myMatrixChecker.isSymmetrical(myMatrix.twoDArray);
 		
-		myHelper.printer(TwoDArray);
-		
-		
-	
-		//int[][] TwoDArray = { { 1, 2, 3}, { 2, 4, 5},{ 3, 5, 6} };
-		
-		//System.out.println(myMatrixChecker.isSymmetrical(TwoDArray));
-		
-		
-		
-		
-		
-		int[][] TwoDArray2 = { { 1, 2, 3}, { 0, 4, 5},
-							 { 0, 0, 6} };
+		if(symmetrical2 == true){
 			
-		System.out.println(myMatrixChecker.isTriangular(TwoDArray2));
+			System.out.println("It is symmetrical");
+		
+		}else{
+			
+			System.out.println("Is not symmetrical");
+		
+		} 
+		
+		
+		/* second instance made with Matrix
+		   int[][] TwoDArray2 = { { 1, 2, 3}, { 0, 4, 5},{ 0, 0, 6} } */
+		
+		Matrix myMatrix2 = new Matrix();
+		
+		myMatrix2.Matrix(3,3);
+		
+		myMatrix2.setRow(0, "123");
+		myMatrix2.setRow(1, "045");
+		myMatrix2.setRow(2, "006");
+		 
+		myMatrix2.prettyPrint();
+		
+		
+			
+		
+		boolean Triangular = myMatrixChecker.isTriangular(myMatrix2.twoDArray);
+		
+		if(Triangular == true){
+			
+			System.out.println("It is triangular");
+		
+		}else{
+			
+			System.out.println("Is not triangular");
+		
+		} 
+		
 	
 	
 	
