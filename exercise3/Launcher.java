@@ -2,10 +2,8 @@ public class Launcher{
 	
 	public static void main(String[] args){
 	
-		Matrix myMatrix = new Matrix();
-		
-		myMatrix.Matrix(10,10);
-		
+		Matrix myMatrix = new Matrix(10,10);
+				
 		myMatrix.setElement(5,5,9);
 		
 		myMatrix.setRow(3,"9989898765");

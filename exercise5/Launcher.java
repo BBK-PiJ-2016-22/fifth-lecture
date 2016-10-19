@@ -22,7 +22,7 @@ public class Launcher{
 		
 		
 		
-		Matrix myMatrix = new Matrix();
+		Matrix myMatrix = new Matrix(3,3);
 		
 		//int[][] TwoDArray = myMatrix.twoDArray;
 		
@@ -31,7 +31,7 @@ public class Launcher{
 		/* first instance made with Matrix
 	       int[][] TwoDArray = { { 1, 2, 3}, { 2, 4, 5},{ 3, 5, 6} }; */
 		
-		myMatrix.Matrix(3,3);
+		//myMatrix.Matrix(3,3);
 		
 		
 		myMatrix.setRow(0, "123");
@@ -56,10 +56,8 @@ public class Launcher{
 		/* second instance made with Matrix
 		   int[][] TwoDArray2 = { { 1, 2, 3}, { 0, 4, 5},{ 0, 0, 6} } */
 		
-		Matrix myMatrix2 = new Matrix();
-		
-		myMatrix2.Matrix(3,3);
-		
+		Matrix myMatrix2 = new Matrix(3,3);
+				
 		myMatrix2.setRow(0, "123");
 		myMatrix2.setRow(1, "045");
 		myMatrix2.setRow(2, "006");

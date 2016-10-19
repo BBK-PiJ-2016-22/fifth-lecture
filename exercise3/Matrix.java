@@ -1,11 +1,11 @@
 public class Matrix{
 	
 	
-	int[][] twoDArray;
+	int[][] twoDArray = null;
 	
 	
-	// initialising twoDArray to 1;
-	public void Matrix(int x, int y) { 
+	// constructor
+	Matrix(int x, int y) { 
 		
 		this.twoDArray = new int[x][y];
 		

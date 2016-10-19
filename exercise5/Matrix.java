@@ -4,8 +4,9 @@ public class Matrix{
 	int[][] twoDArray = null;
 	
 	
-	// initialising twoDArray to ones;
-	public void Matrix(int x, int y) { 
+	// constructor
+	
+	Matrix(int x, int y) { 
 		
 		this.twoDArray = new int[x][y];
 		
